@@ -1,0 +1,17 @@
+<div class="container">
+<h3>ToDo list</h3>
+<br>
+<ul class="list-group">
+<% @todos.each do |todo|%>
+  <li class="list-group-item list-group-item-light"><strong>
+  <%= todo.description %></strong> - 
+  <button type="button" class="btn btn-secondary"><%= link_to 'Show!', todo%></button> - 
+  <button type="button" class="btn btn-info"><%= link_to 'Completado', completed_path(todo), method: :patch%></button> - 
+  <button type="button" class="btn btn-success"><%= link_to 'Modificar', edit_path(todo)%></button> - 
+  <button type="button" class="btn btn-danger"><%= link_to 'Borrar', todo_path(todo), method: :delete, data: { confirm: 'Desea borrar ToDo?' } %></button>
+</li> 
+</ul>
+<%end%>
+<br>
+<%= link_to 'Crear ToDo', todos_new_path, class: 'btn btn-primary'%>
+</div>

@@ -1,0 +1,22 @@
+// Place all the styles related to the todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    margin-top: 60px;
+}
+a {
+    color:white;
+}
+strong {
+    color: rgb(40, 29, 100);
+}
+.navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  .list {
+   font-size: 22px;   
+   color: rgba(189, 67, 67, 0.726);
+  }

@@ -1,0 +1,21 @@
+<div class="container">
+<h3>Tus ToDo</h3>
+<table class="table table-dark">
+    <tr>
+    <th>ToDo</th>
+    <th>Completado</th>
+    </tr>
+    <tr>
+    <td><%= @todo.description  %></td>
+    <td>
+        <% if @todo.completed == false%>
+        <p> No completado</p>
+        <% else %>
+        <p> Completado</p>
+        <% end %>
+    </td>
+    </tr>
+</table>
+<br>
+<%= link_to 'Back', root_path, class: 'btn btn-primary'%>
+</div>

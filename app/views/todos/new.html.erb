@@ -1,0 +1,11 @@
+
+<div class="container">
+<h3>Ingresa ToDo</h3>
+<br>
+<%= form_with(model: @todo, local: true) do |form| %>
+    <%= form.label :description%>:
+    <%= form.text_field :description%>
+    <%= form.submit 'Create'%>
+
+<% end %>
+</div>
